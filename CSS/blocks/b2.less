@@ -1,0 +1,66 @@
+// main: ..//style.less
+
+
+
+.b2 {
+    margin-top: 94px;
+
+    .b2__inner {
+        width: 863px;
+        margin-left: 300px;
+
+        h2 {
+            font-size: 37px;
+            line-height: 38px;
+            color: @pink;
+            margin-bottom: 50px;
+        }
+
+        .b2__list {
+            margin-left: 202px;
+
+            h3 {
+                margin-bottom: 50px;
+                font-size: 21px;
+            }
+
+            p {
+                line-height: 173.5%;
+                font-size: 20px;
+            }
+        }
+
+    }
+}
+
+
+//Media
+@media screen and(max-width:1024px) {
+    .b2 {
+        .b2__inner {
+            width: 500px;
+            margin: 0 auto;
+
+            .b2__list {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:768px) {
+    .b2 {
+        .b2__inner {
+            width: 400px;
+
+        }
+    }
+}
+
+@media screen and(max-width:375px) {
+    .b2 {
+        .b2__inner {
+            width: 300px;
+        }
+    }
+}

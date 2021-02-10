@@ -1,0 +1,264 @@
+// main:  ..//style.less
+
+
+
+
+
+
+.footer {
+    background: url(.././images/dest/footerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1440px;
+
+    .footer__inner {
+        width: 823px;
+        margin: 0 auto;
+        display: flex;
+        padding-top: 242px;
+
+        .footer__right {
+            text-align: center;
+            margin-left: 50px;
+
+            .footer__text {
+                h2 {
+                    font-size: 45px;
+                    line-height: 54px;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    color: @white;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: @brown;
+                    margin-bottom: 25px;
+                }
+
+                span {
+                    font-size: 39px;
+                    line-height: 47px;
+                    color: @white;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    font-family: "MuseoSansBlack";
+                    margin-right: 15px;
+                }
+
+                s {
+                    font-size: 39px;
+                    line-height: 47px;
+                    color: @brown;
+                    font-family: "MuseoSansLight";
+                }
+
+            }
+
+            .form__footer {
+                width: 423px;
+                height: 384px;
+                background: @white;
+                box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+                margin-top: 30px;
+                padding-top: 20px;
+
+                p {
+                    margin-bottom: 20px;
+                }
+
+                input {
+                    width: 307px;
+                    height: 48px;
+                    text-align: center;
+                    border: none;
+                    background: @gray-light;
+                    margin-bottom: 16px;
+                    font-family: "MuseoSansMedium";
+                }
+
+                select {
+                    width: 307px;
+                    height: 48px;
+                    text-align: center;
+                    border: none;
+                    background: @gray-light;
+                    margin-bottom: 16px;
+                    color: @brown;
+                    font-family: "MuseoSansMedium";
+                    padding-left: 120px;
+
+                }
+
+                .form__btn {
+                    width: 220px;
+                    height: 46px;
+                    border: none;
+                    cursor: pointer;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 44px;
+                    background: @pink;
+                    font-family: "MuseoSansBlack";
+                    color: @white;
+                    font-size: 18px;
+                    padding-bottom: 12px;
+                }
+            }
+
+            .footer__bottom {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+                margin-left: 115px;
+
+                p {
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: @white;
+                    margin-right: 15px;
+                }
+
+                img {
+                    transition: 0.2s linear;
+
+                    &:hover {
+                        transform: translateX(8px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Media
+
+@media screen and (max-width:1024px) {
+    .footer {
+        height: 0;
+
+        .footer__inner {
+            .footer__right {
+                .footer__text {
+
+                    h2 {
+                        color: @pink;
+                        text-shadow: none;
+                    }
+
+                    span {
+                        color: @pink;
+                        text-shadow: none;
+                    }
+                }
+
+                .footer__bottom {
+                    margin: 30px 140px;
+
+                    p {
+                        color: @black ;
+                    }
+
+                    img {
+                        display: none;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and(max-width:768px) {
+    .footer {
+        padding: 40px 0;
+        background-image: none;
+
+        .footer__inner {
+            padding-top: 0;
+            width: 600px;
+            flex-direction: column;
+            margin: 0 auto;
+
+            .footer__left {
+                width: 300px;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .footer__right {
+                width: 500px;
+
+                .form__footer {
+                    margin: 30px auto;
+                }
+
+                .footer__bottom {
+                    text-align: center;
+                    margin: 30px 180px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and(max-width:425px) {
+    .footer {
+        .footer__inner {
+            width: 400px;
+
+            .footer__right {
+                margin: 0 auto;
+                width: 400px;
+
+                .form__footer {
+                    width: 330px;
+                }
+
+                .footer__bottom {
+                    text-align: center;
+                    margin: 30px 130px;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and(max-width:375px) {
+    .footer {
+        .footer__inner {
+            .footer__right {
+                .footer__text {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and(max-width:375px) {
+    .footer {
+        .footer__inner {
+            width: 300px;
+
+            .footer__right {
+                width: 300px;
+
+                .form__footer {
+                    width: 323px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+// main: ..//style.less
+
+
+.b4 {
+    padding: 90px 0;
+
+    .b4__header {
+        text-align: center;
+        margin-bottom: 94px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 38px;
+            color: @pink;
+            margin-bottom: 15px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 105%;
+        line-height: 22px;
+    }
+
+    .b4__inner {
+        display: flex;
+
+        .b4__left {
+            text-align: right;
+        }
+
+        .b4__content {
+            margin-bottom: 30px;
+
+            h4 {
+                color: @pink;
+                font-size: 20px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                font-family: "MuseoSansBlack";
+            }
+        }
+    }
+}
+
+//Media
+
+
+@media screen and (max-width:768px) {
+    .b4 {
+        .b4__inner {
+            flex-direction: column;
+
+            width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .b4 {
+        .b4__inner {
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .b4 {
+        .b4__inner {
+            width: 300px;
+
+            .b4__center {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
